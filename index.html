@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MINJE - Empanadas y Pizzas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+  .item {
+      display: inline-block;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      position: relative;
+    }
+    .bot {
+      color: rgb(255, 255, 255);
+      background-color: rgb(83, 41, 182);
+      padding: 0.2rem;
+      cursor: pointer;
+      font-size: 1rem;
+    } 
+    .bot:hover {
+      color: rgb(45, 9, 129);
+      background-color: rgb(142, 109, 219);
+    }
+    li{
+      cursor: pointer;
+      padding: 1rem;
+    }
+    li:hover {
+      background-color: rgb(255, 255, 255);
+    }
+    
+</style>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 img-fluid">
+        <img src="img/minje encabezado.jpg" class="img-fluid" alt="Logo empanadas Minje">
+      </div>
+    </div>
+    <div class="row pt-3">
+      <div class="col-md-3">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Docena de Empanadas</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$2100</h1>
+            <p class="card-text">Comprando una docena de empanadas te ahorrás $300</p>
+            <li class="boton bot" id="btnDocena">Agregar una docena</li>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Cada Empanada</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$200</h1>
+            <p class="card-text">Tradicionales empanadas de pollo, no te las pierdas!</p>
+            <li class="boton bot" id="btnEmpanada">Agregar una empanada</li>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Gaseosa</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$300</h1>
+            <p class="card-text">Para acompañar unas deliciosas empanadas</p>
+            <li class="boton bot" id="btnGaseosa">Agregar una gaseosa</li>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Cerveza</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$400</h1>
+            <p class="card-text">Una refrescante y espumosa cerveza Corona </p>
+            <li class="boton bot" id="btnCerveza">Agregar una cerveza</li>
+          </div>
+        </div>
+      </div>
+      <div class="row col-md-12 justify-content-center align-items-center">
+        <h1>Carrito de compras</h1>
+      </div>
+
+        <div class="row col-md-12 justify-content-center align-items-center">
+            <ul id="carrito">
+
+            </ul>
+        </div>
+        <div class="row col-md-12 justify-content-center align-items-center">
+            <h1 id="costo" style="text-align: right">Costo Total: <span></span></h1>
+        </div>
+
+        <h2 id="costo"></h2>
+    </div>
+    
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
